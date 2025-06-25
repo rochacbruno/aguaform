@@ -1,0 +1,22 @@
+[project]
+name = "aguaform"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Bruno Rocha", email = "rochacbruno@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "cdktf~=0.21.0",
+    "cdktf-cdktf-provider-docker~=12.0.2",
+    "gradio>=5.34.2",
+    "pytest>=8.4.1",
+]
+
+[project.scripts]
+aguaform = "aguaform:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
